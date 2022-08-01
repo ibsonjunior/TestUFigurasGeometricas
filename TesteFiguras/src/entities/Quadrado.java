@@ -1,12 +1,12 @@
 package entities;
 
 public class Quadrado implements Figura{
-    private int lado;
+    private double lado;
 
     public Quadrado() {
     }
 
-    public Quadrado(int lado) {
+    public Quadrado(double lado) {
         this.lado = lado;
     }
 

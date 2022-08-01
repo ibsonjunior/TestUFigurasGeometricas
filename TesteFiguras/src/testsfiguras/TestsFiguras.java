@@ -3,6 +3,7 @@ package testsfiguras;
 import entities.Circulo;
 import entities.Figura;
 import entities.Quadrado;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -15,19 +16,33 @@ public class TestsFiguras {
         circulo = new Circulo(3);
     }
 
-    @Test
+//    @Test
+//
+//    void imprimirTest(){
+//            System.out.println(quadrado);
+//            System.out.println(circulo);
+//    }
+//
+//    @Test
+//
+//    void calcularPerimetro(){
+//        System.out.println(quadrado.calcularPerimetro());
+//        System.out.println(circulo.calcularPerimetro());
+//    }
 
-    void imprimirTest(){
-            System.out.println(quadrado);
-            System.out.println(circulo);
+    @Test
+        void buscarPerimetroCirculo() {
+    Assertions.assertEquals(18.84955592153876, circulo.calcularPerimetro());
     }
 
     @Test
-
-    void calcularPerimetro(){
-        System.out.println(quadrado.calcularPerimetro());
-        System.out.println(circulo.calcularPerimetro());
+    void buscarPerimetroQuadrado() {
+        Assertions.assertEquals(16, quadrado.calcularPerimetro());
     }
+
+
+
+
 
 
 

@@ -1,12 +1,12 @@
 package entities;
 
 public class Circulo implements Figura {
-    private int raio;
+    private double raio;
 
     public Circulo() {
     }
 
-    public Circulo(int raio) {
+    public Circulo(double raio) {
         this.raio = raio;
     }
 
